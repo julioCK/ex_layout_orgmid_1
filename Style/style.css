@@ -1,0 +1,68 @@
+/* --------------ESTILOS GERAIS-------------- */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 3.75rem 0 0 0;
+  background-color: #f7f7f7;
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+/* -------------------------- */
+
+header {
+  display: grid;
+  justify-items: center;
+  gap: 3rem;
+}
+
+.main-menu {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0px;
+}
+
+.btn-main-menu {
+  text-transform: uppercase;
+  padding: 1.1rem 2.1rem;
+  border-radius: 4px;
+  background-color: #fff;
+  display: inline-block;
+  color: #000000;
+}
+
+.conteudo {
+  max-width: 62.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteudo .apresentacao {
+}
+
+.conteudo .vantagens {
+}
