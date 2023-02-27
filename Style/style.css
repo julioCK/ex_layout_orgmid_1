@@ -48,6 +48,8 @@ header {
 
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 0px;
   gap: 1.25rem;
   padding: 0px;
   margin: 0px;
@@ -159,4 +161,50 @@ footer p {
   background-color: #fff;
   padding: 40px;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .introducao::before {
+    display: none;
+  }
+
+  .h2-vantagens {
+    padding: 60px 100px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  .h2-vantagens {
+    text-align: left;
+    padding: 40px 20px 40px 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    word-wrap: break-word;
+  }
+
+  .h2-vantagens {
+    font-size: 3rem;
+    padding: 40px 0px;
+  }
+
+  footer p {
+    padding: 30px 0px;
+  }
 }
